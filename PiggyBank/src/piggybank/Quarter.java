@@ -18,6 +18,15 @@ public class Quarter extends AbstractMoney {
 	}
 
 	@Override
+	public void printContents() {
+		if (numCoins == 1) {
+			System.out.println(numCoins + " Quarter");
+		} else {
+			System.out.println(numCoins + " Quarters");
+		}
+	}
+
+	@Override
 	public double getValue() {
 		return numCoins * faceValue;
 	}

@@ -18,6 +18,15 @@ public class Nickel extends AbstractMoney {
 	}
 
 	@Override
+	public void printContents() {
+		if (numCoins == 1) {
+			System.out.println(numCoins + " Nickel");
+		} else {
+			System.out.println(numCoins + " Nickels");
+		}
+	}
+
+	@Override
 	public double getValue() {
 		return numCoins * faceValue;
 	}

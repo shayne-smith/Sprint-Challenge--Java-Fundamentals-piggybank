@@ -18,6 +18,11 @@ public class Dollar extends AbstractMoney {
 	}
 
 	@Override
+	public void printContents() {
+		System.out.println("$" + numCoins);
+	}
+
+	@Override
 	public double getValue() {
 		return numCoins * faceValue;
 	}

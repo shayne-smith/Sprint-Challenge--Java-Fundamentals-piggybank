@@ -2,7 +2,7 @@ package piggybank;
 
 public class Penny extends AbstractMoney {
 	private int numCoins;
-	private double faceValue = 0.25;
+	private double faceValue = 0.01;
 
 	public Penny() {
 		numCoins = 1;
@@ -15,6 +15,15 @@ public class Penny extends AbstractMoney {
 	@Override
 	public void printValue() {
 		System.out.print(numCoins * faceValue);
+	}
+
+	@Override
+	public void printContents() {
+		if (numCoins == 1) {
+			System.out.println(numCoins + " Penny");
+		} else {
+			System.out.println(numCoins + " Pennies");
+		}
 	}
 
 	@Override

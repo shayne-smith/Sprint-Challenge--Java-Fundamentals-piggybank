@@ -18,6 +18,15 @@ public class Dime extends AbstractMoney {
 	}
 
 	@Override
+	public void printContents() {
+		if (numCoins == 1) {
+			System.out.println(numCoins + " Dime");
+		} else {
+			System.out.println(numCoins + " Dimes");
+		}
+	}
+
+	@Override
 	public double getValue() {
 		return numCoins * faceValue;
 	}
