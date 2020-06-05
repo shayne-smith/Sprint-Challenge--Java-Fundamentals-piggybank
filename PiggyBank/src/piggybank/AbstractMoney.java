@@ -10,5 +10,4 @@ abstract class AbstractMoney {
 	abstract void printValue();
 	abstract void printContents();
 	abstract double getValue();
-
 }
