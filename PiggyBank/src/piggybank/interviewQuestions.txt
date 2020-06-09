@@ -1,0 +1,23 @@
+1) Describe why Java is called an object oriented, strongly typed language.
+
+Java is built with classes that hold both data and behavior. Those classes create objects and can be extended to build subclasses, which is why Java is called an object-oriented programming language. It is strongly typed because every piece of data needs to be declared with a specific type, e.g., int, String, ArrayList, etc. 
+
+2) Give examples of Java Collections explaining the use and differences between them.
+
+Array - stores single type of data, has fixed length, indexed, doesn't enforce unique values, maintains order/sortable
+ArrayList - stores single type of data, has variable length, indexed, doesn't enforce unique values, maintains order/sortable
+HashMap - stores <key, value> pairs, has variable length, doesn't enforce unique values, accessed by key value, doesn't maintain order/sortable
+HashSet - stores single type of data, has variable length, enforces unique values, accessed by value itself, doesn't maintain order/sortable
+
+3) What is recursion and how does it differ from regular looping?
+
+Recursion is when an operation calls itself within the operation, thereby creating recursion. It requires 2 statements: a base case where the recursive function can stop and is non-recursive, and a general (recursive) case that can be expressed in terms of smaller units of itself. Regular looping isn't defined in terms of itself. 
+
+4) Explain the differences between Abstract Classes and Interfaces including scenarios of when to use them.
+
+They are both used for abstraction. Interfaces define a formal way to handle interaction with the rest of the app. Any class that implements an interface must include an implementation for each method in the interface. Interfaces cannot be used to create objects directly and do not have method bodies, just headers. Interface methods are abstract and public by default. The primary purpose of interfaces is to provide uniformity of behaviors among a group of classes because the classes can all do the same thing. Abstract classes are used to create uniform subclasses. These subclasses extend the abstract class, thus inheriting all fields and methods from the abstract class. They are useful when storing subclasses in a single list, like an ArrayList. Abstract classes are also useful when a lot of subclasses need the same method implementation.
+
+Type of methods: Interfaces can only have abstract methods. Abstract classes can have abstract and non-abstract methods. From Java 8, it can also have default and static methods.
+Inheritance vs. Abstraction: Abstract classes can be extended using the keyword "extends" and a Java interface can be implemented using the keyword "implements."
+
+
